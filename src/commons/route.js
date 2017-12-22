@@ -7,11 +7,11 @@ module.exports.RouterLink = Elf.Component("router-link", {
     },
 
     onInitial : function () {
-        Elf.attachEvent(this.ref.link, "click", this);
+        Elf.attachEvent(this.refs.link, "click", this);
     },
 
     onDispose  : function () {
-        Elf.detachEvent(this.ref.link, "click", this);
+        Elf.detachEvent(this.refs.link, "click", this);
     }
 });
 
