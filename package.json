@@ -1,0 +1,7 @@
+{
+  "name": "elf-hotel",
+  "version": "1.0.0",
+  "dependencies": {
+    "elfjs": "^1.0.2"
+  }
+}
