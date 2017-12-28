@@ -1,0 +1,21 @@
+.hero-images-content {
+    background-image: none;
+    min-height: 505px;
+    position: relative;
+    height: 80vh;
+
+    .hero-image {
+        background-image: url('./assets/offset_comp_340104-3.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+    
+        &.only-one {
+            background-position: center center;
+        }
+    }
+}

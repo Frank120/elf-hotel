@@ -1,3 +1,179 @@
 .nav-content {
-    color: #f0f;
+    touch-action: pan-x pan-y;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-top-highlight-color: #000000;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.logo-content {
+    top: 12px;
+    font-size: 38px;
+    color: #ba0c2f;
+    line-break: 52px;    
+    position: relative;
+    vertical-align: top;
+    margin-right: 2.3rem;
+    display: inline-block;
+    padding-right: 2.4rem;
+    cursor: pointer;
+    border-right: 1px solid #cfcfcf;
+}
+
+.nav-menu {
+    display: inline-block;
+    padding-left: 5rem;
+    position: relative;
+    left: -5rem;
+
+    .nav-menu-item {
+        display: inline-block;
+        margin-right: 1.2vw;
+
+        .item-link {
+            line-height: 70px;
+            font-size: 1.4rem;
+            cursor: pointer;
+            text-decoration: none;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            color: #fff;
+            
+            &:hover {
+                color: #9f7d23;
+                border-bottom: 1px solid #9f7d23;
+                padding-bottom: 1px;
+            }
+        }
+    }
+}
+
+.menu-user {
+    right: 0;
+    height: 70px;
+    position: absolute;
+    display: inline-block;
+    text-align: left;
+
+    .menu-other {
+        vertical-align: top;
+        display: inline-block;
+        position: relative;
+
+        .currency {
+            text-transform: uppercase;
+            display: inline-block;
+            margin-right: 1.3vw;
+            position: relative;
+            color: #fff;
+
+            .cl-text {
+                line-height: 70px;
+                font-size: 1.4rem;
+                cursor: pointer;
+                color: #fff;
+                text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+
+                &:hover {
+                    color: #9f7d23
+                }
+            }
+
+            .chervon-icon {
+                text-shadow: none;
+                font-size: 1rem;
+                margin-left: 6px;
+                cursor: pointer;
+            }
+        }
+
+        .language {
+            text-transform: uppercase;
+            display: inline-block;
+            margin-right: 1.3vw;
+            position: relative;
+            color: #fff;
+
+            .cl-text {
+                line-height: 70px;
+                font-size: 1.4rem;
+                cursor: pointer;
+                color: #fff;
+                text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+
+                &:hover {
+                    color: #9f7d23;
+                }
+            }
+
+            .chervon-icon {
+                font-size: 1rem;
+                margin-left: 6px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.nav-user {
+    display: inline-block;
+    position: relative;
+
+    .logged-out-wrapper {
+        line-height: 70px;
+        font-size: 1.4rem;
+        cursor: pointer;
+        color: #fff;
+        display: inline-block;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+
+        #opt-login {
+            font-size: 2.6rem;
+            vertical-align: middle;
+            display: inline-block;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+
+            &:hover {
+                color: #9f7d23;
+            }
+        }
+
+        .chervon-icon {
+            font-size: 1rem;
+            margin-left: 6px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+    }
+
+    .shopping-crat-warpper {
+        position: relative;
+        vertical-align: top;
+        margin-right: 2.1rem;
+        display: inline-block;
+
+        .smart {
+            color: #fff;
+            display: inline-block;
+            text-decoration: none;
+
+            .cart-icon {
+                font-size: 3.2rem;
+                position: relative;
+                line-height: 70px;
+                text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+
+                &:hover {
+                    color: #9f7d23;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .nav-content {
+        height: 70px;
+        position: relative;
+        font-weight: 500;
+        box-sizing: border-box;
+    }
 }
