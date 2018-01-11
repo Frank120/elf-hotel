@@ -1,0 +1,75 @@
+.loop-image-content {
+    width: 100%;
+    min-height: 400px;
+    position: relative;
+
+    .common_content {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+    }
+
+    .item-content {
+        z-index: 1;
+
+        .slick-item {
+            width: 100%;
+            height: 100%;
+            color: #fff;
+            text-align: center;
+            position: absolute;
+
+            &.c_01 {
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                z-index: 5;
+                width: 90%;
+                height: 90%;
+                margin: auto;
+                background-color: red;
+            }
+
+            &.c_02 {
+                z-index: 3;
+                background-color: blue;
+            }
+
+            &.c_03 {
+                z-index: 2;
+                background-color: green;
+            }
+        }
+    }
+
+    .btn-content {
+        z-index: 2;
+
+        .btn {
+            width: 50px;
+            height: 100%;
+            text-align: center;
+            color: white;
+            position: absolute;
+            cursor: pointer;
+            background: transparent;
+
+            span {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        .prev-btn {
+            left: 0;
+        }
+
+        .next-btn {
+            right: 0;
+        }
+    }
+}
